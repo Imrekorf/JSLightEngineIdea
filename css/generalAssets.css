@@ -1,0 +1,78 @@
+HTML {
+  width: 1150px;
+  height: 950px;
+  overflow: hidden;
+}
+
+body {
+  width: 1050;
+  height: 850px;
+  overflow: hidden;
+  margin: 3em;
+  margin-top: 2em;
+  background: -webkit-radial-gradient(circle farthest-corner, rgba(0,0,0,0.57) 0, rgba(0,0,0,0.3) 85%, rgba(49,48,58,0) 100%), #31303a;
+  background: -moz-radial-gradient(circle farthest-corner, rgba(0,0,0,0.57) 0, rgba(0,0,0,0.3) 85%, rgba(49,48,58,0) 100%), #31303a;
+  background: radial-gradient(circle farthest-corner, rgba(0,0,0,0.57) 0, rgba(0,0,0,0.3) 85%, rgba(49,48,58,0) 100%), #31303a;
+}
+
+.side_bar {
+  position: absolute;
+  height: calc(1150px - 6em);
+  width: 3em;
+  top: 2em;
+}
+
+#side_bar1 {
+  top: 0em;
+  left: 3em;
+  height: 2em;
+}
+
+#side_bar2 {
+  left: 0;
+}
+
+#side_bar3 {
+  right: 0;
+}
+
+.master {
+  width: 1050px;
+  background: rgb(0,0,0);
+  height: 850px;
+  position: absolute;
+  display: inline-block;
+}
+
+.menu_bar {
+  position: absolute;
+  width: 1050;
+  bottom: 0;
+  height: 4em;
+  background: -webkit-linear-gradient(90deg, rgba(49,48,58,0) 0, rgba(49,48,58,0.1) 88%, rgba(0,0,0,1) 100%);
+  background: -moz-linear-gradient(0deg, rgba(49,48,58,0) 0, rgba(49,48,58,0.1) 88%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(0deg, rgba(49,48,58,0) 0, rgba(49,48,58,0.1) 88%, rgba(0,0,0,1) 100%);
+}
+
+.room {
+  width: calc(50%);
+  height: calc(50%);
+  position: relative;
+  display: inline-block;
+  float: left;
+
+}
+
+/*
+.room:nth-child(1n) {
+  background: pink;
+}
+
+.room:nth-child(2) {
+  background: red;
+}
+
+.room:nth-child(3n) {
+  background: red;
+}
+*/

@@ -1,0 +1,27 @@
+.mainbody {
+  position: absolute;
+}
+
+.body_parent {
+  width: 0;
+  height: 0;
+  position: relative;
+  color: rgb(179, 15, 15);
+  z-index: 2;
+}
+
+.wall {
+  background-color: inherit;
+  position: absolute;
+  background-color: rgb(179, 15, 15);
+  z-index: 5;
+}
+
+.wall::after {
+  content: '';
+  background: -webkit-radial-gradient(closest-side, rgba(0,0,0,0.33) 0, rgba(0,0,0,0.33) 16%, rgba(100,100,100,0.19) 100%), -webkit-linear-gradient(0deg, rgba(30,28,28,0.27) 0, rgba(0,0,0,0.38) 100%), -webkit-linear-gradient(0deg, rgba(0,0,0,0.18) 0, rgba(0,0,0,0.33) 100%), -webkit-linear-gradient(0deg, rgba(0,0,0,0.15) 0, rgba(0,0,0,0.36) 100%), -webkit-linear-gradient(0deg, rgba(0,0,0,0.23) 0, rgba(0,0,0,0.33) 100%), -webkit-linear-gradient(0deg, rgba(0,0,0,0.28) 0, rgba(0,0,0,0.4) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(0deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -webkit-linear-gradient(-90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%);
+  background: -moz-radial-gradient(closest-side, rgba(0,0,0,0.33) 0, rgba(0,0,0,0.33) 16%, rgba(100,100,100,0.19) 100%), -moz-linear-gradient(90deg, rgba(30,28,28,0.27) 0, rgba(0,0,0,0.38) 100%), -moz-linear-gradient(90deg, rgba(0,0,0,0.18) 0, rgba(0,0,0,0.33) 100%), -moz-linear-gradient(90deg, rgba(0,0,0,0.15) 0, rgba(0,0,0,0.36) 100%), -moz-linear-gradient(90deg, rgba(0,0,0,0.23) 0, rgba(0,0,0,0.33) 100%), -moz-linear-gradient(90deg, rgba(0,0,0,0.28) 0, rgba(0,0,0,0.4) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), -moz-linear-gradient(180deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(closest-side, rgba(0,0,0,0.33) 0, rgba(0,0,0,0.33) 16%, rgba(100,100,100,0.19) 100%), linear-gradient(90deg, rgba(30,28,28,0.27) 0, rgba(0,0,0,0.38) 100%), linear-gradient(90deg, rgba(0,0,0,0.18) 0, rgba(0,0,0,0.33) 100%), linear-gradient(90deg, rgba(0,0,0,0.15) 0, rgba(0,0,0,0.36) 100%), linear-gradient(90deg, rgba(0,0,0,0.23) 0, rgba(0,0,0,0.33) 100%), linear-gradient(90deg, rgba(0,0,0,0.28) 0, rgba(0,0,0,0.4) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(90deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%), linear-gradient(180deg, rgba(230,126,34,0) 0, rgba(230,126,34,0) 96%, rgba(0,0,0,1) 96%, rgba(0,0,0,1) 100%);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-x, repeat-y;
+  background-position: 44% 80%, 5% 19%, 96% 36%, 49% 53%, 96% 71%, 15% 88%, 48% 1%, 40% 19%, 58% 36%, 58% 36%, 50% 53%, 62% 71%, 54% 88%, 63% 105%, 50% 54%;
+}
